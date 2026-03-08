@@ -74,7 +74,8 @@ int main()
         return -1;
     }
 
-    glEnable(GL_PROGRAM_POINT_SIZE);    
+    glEnable(GL_PROGRAM_POINT_SIZE);
+
 
     // ---------- IMGUI ----------
 
@@ -82,7 +83,6 @@ int main()
     ImGui::CreateContext();
 
     ImGuiIO& io = ImGui::GetIO();
-    (void)io;
 
     ImGui::StyleColorsDark();
 
@@ -90,7 +90,7 @@ int main()
     ImGui_ImplOpenGL3_Init("#version 450");
 
 
-    // ---------- SHADERS ----------
+    // ---------- SHADER ----------
 
     const char* vs = R"(
 
@@ -98,10 +98,14 @@ int main()
 
     layout (location = 0) in vec2 pos;
 
+    uniform vec2 camPos;
+    uniform float camZoom;
+
     void main()
     {
-        gl_Position = vec4(pos, 0.0, 1.0);
-        gl_PointSize = 20.0;
+        vec2 p = (pos - camPos) * camZoom;
+        gl_Position = vec4(p, 0.0, 1.0);
+        gl_PointSize = 12.0;
     }
 
     )";
@@ -115,13 +119,16 @@ int main()
 
     void main()
     {
-        color = vec4(1.0, 1.0, 1.0, 1.0);
+        color = vec4(1,1,1,1);
     }
 
     )";
 
 
     GLuint program = createProgram(vs, fs);
+
+    GLint camPosLoc = glGetUniformLocation(program, "camPos");
+    GLint camZoomLoc = glGetUniformLocation(program, "camZoom");
 
 
     // ---------- VAO / VBO ----------
@@ -138,7 +145,7 @@ int main()
 
     glBufferData(
         GL_ARRAY_BUFFER,
-        1000 * sizeof(float) * 2,
+        10000 * sizeof(float) * 2,
         NULL,
         GL_DYNAMIC_DRAW
     );
@@ -159,24 +166,32 @@ int main()
 
     Universe universe;
 
+    universe.G = 1.0f;
+
+
     Body a;
     a.x = -0.3f;
     a.y = 0.0f;
     a.vx = 0.0f;
-    a.vy = 0.5f;
-    a.mass = 10.0f;
+    a.vy = 0.2f;
+    a.mass = 1.0f;
     a.radius = 3.0f;
 
     Body b;
     b.x = 0.3f;
     b.y = 0.0f;
     b.vx = 0.0f;
-    b.vy = -0.5f;
-    b.mass = 10.0f;
+    b.vy = -0.2f;
+    b.mass = 1.0f;
     b.radius = 3.0f;
 
     universe.bodies.push_back(a);
     universe.bodies.push_back(b);
+
+
+    float camX = 0.0f;
+    float camY = 0.0f;
+    float camZoom = 1.0f;
 
 
     // ---------- LOOP ----------
@@ -185,7 +200,7 @@ int main()
     {
         glfwPollEvents();
 
-        float dt = 0.016f;
+        float dt = 0.002f;
 
         universe.update(dt);
 
@@ -211,7 +226,7 @@ int main()
 
         // ---------- RENDER ----------
 
-        glClearColor(0.02f, 0.02f, 0.05f, 1.0f);
+        glClearColor(0.02f,0.02f,0.05f,1);
         glClear(GL_COLOR_BUFFER_BIT);
 
 
@@ -229,12 +244,16 @@ int main()
         glBufferSubData(
             GL_ARRAY_BUFFER,
             0,
-            verts.size() * sizeof(float),
+            verts.size()*sizeof(float),
             verts.data()
         );
 
 
         glUseProgram(program);
+
+        glUniform2f(camPosLoc, camX, camY);
+        glUniform1f(camZoomLoc, camZoom);
+
         glBindVertexArray(vao);
 
         glDrawArrays(
@@ -251,8 +270,6 @@ int main()
         glfwSwapBuffers(window);
     }
 
-
-    // ---------- SHUTDOWN ----------
 
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();
