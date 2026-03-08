@@ -3,6 +3,7 @@ UniverseSim: \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
   CMakeFiles/UniverseSim.dir/src/main.cpp.o \
+  CMakeFiles/UniverseSim.dir/src/Universe.cpp.o \
   CMakeFiles/UniverseSim.dir/external/glad/src/glad.c.o \
   CMakeFiles/UniverseSim.dir/external/imgui/imgui.cpp.o \
   CMakeFiles/UniverseSim.dir/external/imgui/imgui_draw.cpp.o \
@@ -53,6 +54,8 @@ UniverseSim: \
 /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o:
 
 CMakeFiles/UniverseSim.dir/src/main.cpp.o:
+
+CMakeFiles/UniverseSim.dir/src/Universe.cpp.o:
 
 CMakeFiles/UniverseSim.dir/external/glad/src/glad.c.o:
 

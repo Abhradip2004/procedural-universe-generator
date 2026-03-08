@@ -30,6 +30,7 @@ set(IMGUI_SRC
 
 add_executable(UniverseSim
     src/main.cpp
+    src/Universe.cpp
     ${GLAD_SRC}
     ${IMGUI_SRC}
 )

@@ -297,6 +297,30 @@ external/imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/UniverseSim.dir/build.make CMakeFiles/UniverseSim.dir/external/imgui/imgui_widgets.cpp.s
 .PHONY : external/imgui/imgui_widgets.cpp.s
 
+src/Universe.o: src/Universe.cpp.o
+.PHONY : src/Universe.o
+
+# target to build an object file
+src/Universe.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UniverseSim.dir/build.make CMakeFiles/UniverseSim.dir/src/Universe.cpp.o
+.PHONY : src/Universe.cpp.o
+
+src/Universe.i: src/Universe.cpp.i
+.PHONY : src/Universe.i
+
+# target to preprocess a source file
+src/Universe.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UniverseSim.dir/build.make CMakeFiles/UniverseSim.dir/src/Universe.cpp.i
+.PHONY : src/Universe.cpp.i
+
+src/Universe.s: src/Universe.cpp.s
+.PHONY : src/Universe.s
+
+# target to generate assembly for a file
+src/Universe.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UniverseSim.dir/build.make CMakeFiles/UniverseSim.dir/src/Universe.cpp.s
+.PHONY : src/Universe.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -351,6 +375,9 @@ help:
 	@echo "... external/imgui/imgui_widgets.o"
 	@echo "... external/imgui/imgui_widgets.i"
 	@echo "... external/imgui/imgui_widgets.s"
+	@echo "... src/Universe.o"
+	@echo "... src/Universe.i"
+	@echo "... src/Universe.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

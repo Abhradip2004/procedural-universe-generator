@@ -14,6 +14,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/UniverseSim.dir/external/imgui/imgui_tables.cpp.o.d"
   "CMakeFiles/UniverseSim.dir/external/imgui/imgui_widgets.cpp.o"
   "CMakeFiles/UniverseSim.dir/external/imgui/imgui_widgets.cpp.o.d"
+  "CMakeFiles/UniverseSim.dir/src/Universe.cpp.o"
+  "CMakeFiles/UniverseSim.dir/src/Universe.cpp.o.d"
   "CMakeFiles/UniverseSim.dir/src/main.cpp.o"
   "CMakeFiles/UniverseSim.dir/src/main.cpp.o.d"
   "UniverseSim"

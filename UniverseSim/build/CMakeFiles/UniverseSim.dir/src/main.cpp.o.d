@@ -145,4 +145,10 @@ CMakeFiles/UniverseSim.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/locale_facets.tcc \
  /usr/include/c++/15/bits/basic_ios.tcc \
  /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
- /usr/include/c++/15/bits/istream.tcc
+ /usr/include/c++/15/bits/istream.tcc /usr/include/c++/15/vector \
+ /usr/include/c++/15/bits/stl_uninitialized.h \
+ /usr/include/c++/15/bits/stl_vector.h \
+ /usr/include/c++/15/bits/stl_bvector.h \
+ /usr/include/c++/15/bits/vector.tcc \
+ /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/src/Universe.h \
+ /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/src/Body.h

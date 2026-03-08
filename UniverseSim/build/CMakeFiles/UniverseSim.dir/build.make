@@ -86,10 +86,24 @@ CMakeFiles/UniverseSim.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/UniverseSim.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/src/main.cpp -o CMakeFiles/UniverseSim.dir/src/main.cpp.s
 
+CMakeFiles/UniverseSim.dir/src/Universe.cpp.o: CMakeFiles/UniverseSim.dir/flags.make
+CMakeFiles/UniverseSim.dir/src/Universe.cpp.o: /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/src/Universe.cpp
+CMakeFiles/UniverseSim.dir/src/Universe.cpp.o: CMakeFiles/UniverseSim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/UniverseSim.dir/src/Universe.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/UniverseSim.dir/src/Universe.cpp.o -MF CMakeFiles/UniverseSim.dir/src/Universe.cpp.o.d -o CMakeFiles/UniverseSim.dir/src/Universe.cpp.o -c /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/src/Universe.cpp
+
+CMakeFiles/UniverseSim.dir/src/Universe.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/UniverseSim.dir/src/Universe.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/src/Universe.cpp > CMakeFiles/UniverseSim.dir/src/Universe.cpp.i
+
+CMakeFiles/UniverseSim.dir/src/Universe.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/UniverseSim.dir/src/Universe.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/src/Universe.cpp -o CMakeFiles/UniverseSim.dir/src/Universe.cpp.s
+
 CMakeFiles/UniverseSim.dir/external/glad/src/glad.c.o: CMakeFiles/UniverseSim.dir/flags.make
 CMakeFiles/UniverseSim.dir/external/glad/src/glad.c.o: /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/external/glad/src/glad.c
 CMakeFiles/UniverseSim.dir/external/glad/src/glad.c.o: CMakeFiles/UniverseSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/UniverseSim.dir/external/glad/src/glad.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/UniverseSim.dir/external/glad/src/glad.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/UniverseSim.dir/external/glad/src/glad.c.o -MF CMakeFiles/UniverseSim.dir/external/glad/src/glad.c.o.d -o CMakeFiles/UniverseSim.dir/external/glad/src/glad.c.o -c /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/external/glad/src/glad.c
 
 CMakeFiles/UniverseSim.dir/external/glad/src/glad.c.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/UniverseSim.dir/external/glad/src/glad.c.s: cmake_force
 CMakeFiles/UniverseSim.dir/external/imgui/imgui.cpp.o: CMakeFiles/UniverseSim.dir/flags.make
 CMakeFiles/UniverseSim.dir/external/imgui/imgui.cpp.o: /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/external/imgui/imgui.cpp
 CMakeFiles/UniverseSim.dir/external/imgui/imgui.cpp.o: CMakeFiles/UniverseSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/UniverseSim.dir/external/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/UniverseSim.dir/external/imgui/imgui.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/UniverseSim.dir/external/imgui/imgui.cpp.o -MF CMakeFiles/UniverseSim.dir/external/imgui/imgui.cpp.o.d -o CMakeFiles/UniverseSim.dir/external/imgui/imgui.cpp.o -c /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/external/imgui/imgui.cpp
 
 CMakeFiles/UniverseSim.dir/external/imgui/imgui.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/UniverseSim.dir/external/imgui/imgui.cpp.s: cmake_force
 CMakeFiles/UniverseSim.dir/external/imgui/imgui_draw.cpp.o: CMakeFiles/UniverseSim.dir/flags.make
 CMakeFiles/UniverseSim.dir/external/imgui/imgui_draw.cpp.o: /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/external/imgui/imgui_draw.cpp
 CMakeFiles/UniverseSim.dir/external/imgui/imgui_draw.cpp.o: CMakeFiles/UniverseSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/UniverseSim.dir/external/imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/UniverseSim.dir/external/imgui/imgui_draw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/UniverseSim.dir/external/imgui/imgui_draw.cpp.o -MF CMakeFiles/UniverseSim.dir/external/imgui/imgui_draw.cpp.o.d -o CMakeFiles/UniverseSim.dir/external/imgui/imgui_draw.cpp.o -c /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/external/imgui/imgui_draw.cpp
 
 CMakeFiles/UniverseSim.dir/external/imgui/imgui_draw.cpp.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/UniverseSim.dir/external/imgui/imgui_draw.cpp.s: cmake_force
 CMakeFiles/UniverseSim.dir/external/imgui/imgui_tables.cpp.o: CMakeFiles/UniverseSim.dir/flags.make
 CMakeFiles/UniverseSim.dir/external/imgui/imgui_tables.cpp.o: /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/external/imgui/imgui_tables.cpp
 CMakeFiles/UniverseSim.dir/external/imgui/imgui_tables.cpp.o: CMakeFiles/UniverseSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/UniverseSim.dir/external/imgui/imgui_tables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/UniverseSim.dir/external/imgui/imgui_tables.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/UniverseSim.dir/external/imgui/imgui_tables.cpp.o -MF CMakeFiles/UniverseSim.dir/external/imgui/imgui_tables.cpp.o.d -o CMakeFiles/UniverseSim.dir/external/imgui/imgui_tables.cpp.o -c /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/external/imgui/imgui_tables.cpp
 
 CMakeFiles/UniverseSim.dir/external/imgui/imgui_tables.cpp.i: cmake_force
@@ -145,7 +159,7 @@ CMakeFiles/UniverseSim.dir/external/imgui/imgui_tables.cpp.s: cmake_force
 CMakeFiles/UniverseSim.dir/external/imgui/imgui_widgets.cpp.o: CMakeFiles/UniverseSim.dir/flags.make
 CMakeFiles/UniverseSim.dir/external/imgui/imgui_widgets.cpp.o: /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/external/imgui/imgui_widgets.cpp
 CMakeFiles/UniverseSim.dir/external/imgui/imgui_widgets.cpp.o: CMakeFiles/UniverseSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/UniverseSim.dir/external/imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/UniverseSim.dir/external/imgui/imgui_widgets.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/UniverseSim.dir/external/imgui/imgui_widgets.cpp.o -MF CMakeFiles/UniverseSim.dir/external/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/UniverseSim.dir/external/imgui/imgui_widgets.cpp.o -c /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/external/imgui/imgui_widgets.cpp
 
 CMakeFiles/UniverseSim.dir/external/imgui/imgui_widgets.cpp.i: cmake_force
@@ -159,7 +173,7 @@ CMakeFiles/UniverseSim.dir/external/imgui/imgui_widgets.cpp.s: cmake_force
 CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/UniverseSim.dir/flags.make
 CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_glfw.cpp.o: /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/external/imgui/backends/imgui_impl_glfw.cpp
 CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/UniverseSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_glfw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_glfw.cpp.o -c /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/external/imgui/backends/imgui_impl_glfw.cpp
 
 CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_glfw.cpp.i: cmake_force
@@ -173,7 +187,7 @@ CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_glfw.cpp.s: cmake_
 CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/UniverseSim.dir/flags.make
 CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o: /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/external/imgui/backends/imgui_impl_opengl3.cpp
 CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/UniverseSim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o -c /home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/external/imgui/backends/imgui_impl_opengl3.cpp
 
 CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_opengl3.cpp.i: cmake_force
@@ -187,6 +201,7 @@ CMakeFiles/UniverseSim.dir/external/imgui/backends/imgui_impl_opengl3.cpp.s: cma
 # Object files for target UniverseSim
 UniverseSim_OBJECTS = \
 "CMakeFiles/UniverseSim.dir/src/main.cpp.o" \
+"CMakeFiles/UniverseSim.dir/src/Universe.cpp.o" \
 "CMakeFiles/UniverseSim.dir/external/glad/src/glad.c.o" \
 "CMakeFiles/UniverseSim.dir/external/imgui/imgui.cpp.o" \
 "CMakeFiles/UniverseSim.dir/external/imgui/imgui_draw.cpp.o" \
@@ -199,6 +214,7 @@ UniverseSim_OBJECTS = \
 UniverseSim_EXTERNAL_OBJECTS =
 
 UniverseSim: CMakeFiles/UniverseSim.dir/src/main.cpp.o
+UniverseSim: CMakeFiles/UniverseSim.dir/src/Universe.cpp.o
 UniverseSim: CMakeFiles/UniverseSim.dir/external/glad/src/glad.c.o
 UniverseSim: CMakeFiles/UniverseSim.dir/external/imgui/imgui.cpp.o
 UniverseSim: CMakeFiles/UniverseSim.dir/external/imgui/imgui_draw.cpp.o
@@ -211,7 +227,7 @@ UniverseSim: CMakeFiles/UniverseSim.dir/compiler_depend.ts
 UniverseSim: /usr/lib64/libGL.so
 UniverseSim: /usr/lib64/libglfw.so.3.4
 UniverseSim: CMakeFiles/UniverseSim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable UniverseSim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable UniverseSim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/UniverseSim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
