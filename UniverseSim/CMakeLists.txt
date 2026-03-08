@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
+
 project(UniverseSim)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -7,10 +8,17 @@ find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
 
 include_directories(
+    external/glad/include
     external/imgui
     external/imgui/backends
 )
 
+# GLAD
+set(GLAD_SRC
+    external/glad/src/glad.c
+)
+
+# IMGUI
 set(IMGUI_SRC
     external/imgui/imgui.cpp
     external/imgui/imgui_draw.cpp
@@ -22,6 +30,7 @@ set(IMGUI_SRC
 
 add_executable(UniverseSim
     src/main.cpp
+    ${GLAD_SRC}
     ${IMGUI_SRC}
 )
 
@@ -29,4 +38,3 @@ target_link_libraries(UniverseSim
     OpenGL::GL
     glfw
 )
-

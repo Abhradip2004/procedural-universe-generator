@@ -1,0 +1,3 @@
+/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles/UniverseSim.dir
+/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles/edit_cache.dir
+/home/adey/Projects/Flagship/procedural-universe-generator/UniverseSim/build/CMakeFiles/rebuild_cache.dir
